@@ -1,5 +1,5 @@
 const stompClient = new StompJs.Client({
-    webSocketFactory: () => new SockJS('http://' + window.location.host + '/livechat-websocket')
+    webSocketFactory: () => new SockJS(window.location.protocol + '//' + window.location.host + '/livechat-websocket')
 });
 
 
